@@ -1,0 +1,31 @@
+#service-provider-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+}
+#service-provider-list>div{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+#service-provider-list>div img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+#service-provider-list .hospital-name{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#service-provider-list .hospital-name~p{
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

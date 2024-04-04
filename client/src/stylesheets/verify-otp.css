@@ -1,0 +1,23 @@
+.otp-container{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+
+.otp-container>input{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 14px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
