@@ -4,7 +4,7 @@ import axios from "../../utilities/api.js";
 import url from "../../utilities/global.env.js";
 
 // Import Images
-import logo from "../../images/logo.png";
+import logo from "../../images/logo-light.webp";
 
 // Layout
 import Header from "../layout/header.jsx";

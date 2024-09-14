@@ -67,6 +67,7 @@ class Faq extends Component {
               <img className="pt-img3 animate-rotate" src={plusBlue} alt="" />
             </div>
           </div>
+          
 
           <section className="section-sp3">
             <div className="container">
@@ -78,85 +79,61 @@ class Faq extends Component {
                   >
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>
-                        How Doctor Can Ease Your Pain?
+                      What is Health Care Zone?
                       </Accordion.Header>
                       <Accordion.Body>
                         <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                        "Health Care Zone is an online and offline interconnected platform that provides all health services on a single click at your doorstep in a feasible language. It offers a wide range of services including hospital, medical, laboratory, blood bank, ambulance service, milk bank, organ donation camp, health care camp, counseling, and various health schemes."
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
                       <Accordion.Header>
-                        How do I withdraw from a subject?
+                      What services does Health Care Zone offer?
                       </Accordion.Header>
                       <Accordion.Body>
                         <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                        Health Care Zone offers a comprehensive range of health services including: hospital services, medical consultations, laboratory tests, blood bank access, ambulance services, milk bank facilities, organ donation camps, health care camps, counseling services, and information on various government, non-government, and private health schemes.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="2">
                       <Accordion.Header>
-                        Understand Doctor Before You Regret?
+                      How does Health Care Zone remind me of my appointments?
                       </Accordion.Header>
                       <Accordion.Body>
                         <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                        Health Care Zone has a built-in reminder system for appointments. You'll receive notifications to help you keep track of your scheduled medical visits, ensuring you never miss an important health check-up.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="3">
                       <Accordion.Header>
-                        What types of systems do you support?
+                      Is Health Care Zone available in multiple languages?
                       </Accordion.Header>
                       <Accordion.Body>
                         <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                        Yes, Health Care Zone offers a multilingual network. This feature ensures that users can access health information and services in their preferred language, making healthcare more accessible and understandable for a diverse population.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="4">
                       <Accordion.Header>
-                        We Teach You How To Feel Better?
+                      How does Health Care Zone help with routine check-ups?
                       </Accordion.Header>
                       <Accordion.Body>
                         <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                        Health Care Zone provides reminders for routine check-ups. The platform keeps track of your health history and sends timely notifications when it's time for your regular health screenings or follow-ups.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="5">
                       <Accordion.Header>
-                        How Can I Contact You?
+                      Can I get information about health camps and vaccination drives through Health Care Zone?
                       </Accordion.Header>
                       <Accordion.Body>
                         <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                        Absolutely! Health Care Zone provides announcements about vaccination drives and health camps. You'll receive timely updates about these important health initiatives in your area.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -169,29 +146,21 @@ class Faq extends Component {
                   >
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>
-                        How do I withdraw from a subject?
+                      What makes Health Care Zone user-friendly?
                       </Accordion.Header>
                       <Accordion.Body>
                         <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                        Health Care Zone is designed with user-friendliness in mind. It offers all healthcare services on a single click, provides detailed counseling, supports multiple languages, and includes helpful features like appointment reminders and health camp announcements.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
                       <Accordion.Header>
-                        What’s a payment statement?
+                      How can I access counseling services through Health Care Zone?
                       </Accordion.Header>
                       <Accordion.Body>
                         <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                        Health Care Zone offers detailed counseling services as part of its platform. You can easily schedule and access counseling sessions through the app or website, connecting you with healthcare professionals for guidance and support.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -209,48 +178,7 @@ class Faq extends Component {
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="3">
-                      <Accordion.Header>
-                        How do I withdraw from a subject?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="4">
-                      <Accordion.Header>
-                        Understand Doctor Before You Regret?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="5">
-                      <Accordion.Header>
-                        How Doctor Can Ease Your Pain?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <p className="mb-0">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                      </Accordion.Body>
-                    </Accordion.Item>
+                    
                   </Accordion>
                 </div>
               </div>

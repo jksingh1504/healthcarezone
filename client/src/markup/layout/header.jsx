@@ -8,8 +8,8 @@ import { withRouter } from "react-router-dom";
 import Toast from "../elements/toast.jsx";
 
 // Images
-import logo from "../../images/logo.png";
-import logoWhite from "../../images/logo-white.png";
+import logo from "../../images/logo-light.webp";
+import logoWhite from "../../images/logo-light.webp";
 
 class Header extends Component {
   constructor(props) {

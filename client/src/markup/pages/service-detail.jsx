@@ -18,13 +18,50 @@ class ServiceDetail extends Component {
 
     this.state = {
       Services: [],
+      faqs: [
+        {
+          question: "What is Health Care Zone?",
+          answer: "Health Care Zone is an online and offline interconnected platform that provides all health services on a single click at your doorstep in a feasible language. It offers a wide range of services including hospital, medical, laboratory, blood bank, ambulance service, milk bank, organ donation camp, health care camp, counseling, and various health schemes."
+        },
+        {
+          question: "What services does Health Care Zone offer?",
+          answer: "Health Care Zone offers a comprehensive range of health services including: hospital services, medical consultations, laboratory tests, blood bank access, ambulance services, milk bank facilities, organ donation camps, health care camps, counseling services, and information on various government, non-government, and private health schemes."
+        },
+        {
+          question: "How does Health Care Zone remind me of my appointments?",
+          answer: "Health Care Zone has a built-in reminder system for appointments. You'll receive notifications to help you keep track of your scheduled medical visits, ensuring you never miss an important health check-up."
+        },
+        {
+          question: "Is Health Care Zone available in multiple languages?",
+          answer: "Yes, Health Care Zone offers a multilingual network. This feature ensures that users can access health information and services in their preferred language, making healthcare more accessible and understandable for a diverse population."
+        },
+        {
+          question: "How does Health Care Zone help with routine check-ups?",
+          answer: "Health Care Zone provides reminders for routine check-ups. The platform keeps track of your health history and sends timely notifications when it's time for your regular health screenings or follow-ups."
+        },
+        {
+          question: "Can I get information about health camps and vaccination drives through Health Care Zone?",
+          answer: "Absolutely! Health Care Zone provides announcements about vaccination drives and health camps. You'll receive timely updates about these important health initiatives in your area."
+        },
+        {
+          question: "What makes Health Care Zone user-friendly?",
+          answer: "Health Care Zone is designed with user-friendliness in mind. It offers all healthcare services on a single click, provides detailed counseling, supports multiple languages, and includes helpful features like appointment reminders and health camp announcements."
+        },
+        {
+          question: "How can I access counseling services through Health Care Zone?",
+          answer: "Health Care Zone offers detailed counseling services as part of its platform. You can easily schedule and access counseling sessions through the app or website, connecting you with healthcare professionals for guidance and support."
+        }
+      ]
     };
+  }
+
+  componentDidMount() {
     axios
       .get(
         `/category/getByServiceRef?serviceRef=${this.props.match.params.categoryRef}`
       )
       .then((res) => {
-        console.log(res,this.props.match.params.categoryRef);
+        console.log(res, this.props.match.params.categoryRef);
         this.setState({ Services: res.data.categoryByServiceRef });
       })
       .catch((err) => console.log(err));
@@ -36,25 +73,6 @@ class ServiceDetail extends Component {
         <Header />
 
         <div className="page-content bg-white">
-          {/* <div className="banner-wraper">
-						<div className="page-banner" style={{backgroundImage: "url("+bnrImg1+")"}}>
-							<div className="container">
-								<div className="page-banner-entry text-center">
-									<h1>Service Details</h1>
-									<nav aria-label="breadcrumb" className="breadcrumb-row">
-										<ul className="breadcrumb">
-											<li className="breadcrumb-item"><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a></li>
-											<li className="breadcrumb-item active" aria-current="page">Service Details</li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-							<img className="pt-img1 animate-wave" src={waveBlue} alt=""/>
-							<img className="pt-img2 animate2" src={circleDots} alt=""/>
-							<img className="pt-img3 animate-rotate" src={plusBlue} alt=""/>
-						</div>
-					</div> */}
-
           <section className="section-area section-sp1">
             <div className="container">
               <div className="row">
@@ -132,90 +150,14 @@ class ServiceDetail extends Component {
                       defaultActiveKey="0"
                       className="accordion ttr-accordion1"
                     >
-                      <Accordion.Item eventKey="0">
-                        <Accordion.Header>
-                          How Doctor Can Ease Your Pain?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          <p className="mb-0">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
-                          </p>
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="1">
-                        <Accordion.Header>
-                          How do I withdraw from a subject?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          <p className="mb-0">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
-                          </p>
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="2">
-                        <Accordion.Header>
-                          Understand Doctor Before You Regret?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          <p className="mb-0">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
-                          </p>
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="3">
-                        <Accordion.Header>
-                          What types of systems do you support?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          <p className="mb-0">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
-                          </p>
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="4">
-                        <Accordion.Header>
-                          We Teach You How To Feel Better?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          <p className="mb-0">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
-                          </p>
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="5">
-                        <Accordion.Header>
-                          How Can I Contact You?
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          <p className="mb-0">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
-                          </p>
-                        </Accordion.Body>
-                      </Accordion.Item>
+                      {this.state.faqs.map((faq, index) => (
+                        <Accordion.Item eventKey={index.toString()} key={index}>
+                          <Accordion.Header>{faq.question}</Accordion.Header>
+                          <Accordion.Body>
+                            <p className="mb-0">{faq.answer}</p>
+                          </Accordion.Body>
+                        </Accordion.Item>
+                      ))}
                     </Accordion>
                   </div>
                 </div>
@@ -223,16 +165,14 @@ class ServiceDetail extends Component {
                   <aside className="sticky-top pb-1">
                     <div className="widget">
                       <ul className="service-menu">
-                        {this.state.Services.map((ele) => {
-                          return (
-                            <li key={ele._id}>
-                              <Link to={`/serviceProviders/${ele._id}`}>
-                                <span>{ele.categoryName}</span>
-                                <i className="fa fa-angle-right"></i>
-                              </Link>
-                            </li>
-                          );
-                        })}
+                        {this.state.Services.map((ele) => (
+                          <li key={ele._id}>
+                            <Link to={`/serviceProviders/${ele._id}`}>
+                              <span>{ele.categoryName}</span>
+                              <i className="fa fa-angle-right"></i>
+                            </Link>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                     <div className="widget">
@@ -243,7 +183,7 @@ class ServiceDetail extends Component {
                           <h5 className="title">Download our Brochures</h5>
                           <span>Download</span>
                         </Link>
-                        <Link to="#" class="download-link">
+                        <Link to="#" className="download-link">
                           <img src={doc} alt="" />
                           <h5 className="title">Our Company Details</h5>
                           <span>Download</span>

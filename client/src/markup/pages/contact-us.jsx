@@ -149,16 +149,16 @@ class ContactUs extends Component {
                           <h6 className="title">
                             <i className="ti-map-alt"></i>Location
                           </h6>
-                          <p>2005 Stokes Isle Apt. 896, Venaville 10010, USA</p>
+                          <p>Maharashtra</p>
                         </div>
                         <div className="icon-box">
                           <h6 className="title">
                             <i className="ti-id-badge"></i>Email &amp; Phone
                           </h6>
                           <Link to="#" className="text-white">
-                            info@yourdomain.com
+                            info@healthczones.com/
                           </Link>
-                          <p>(+68) 120034509</p>
+                          <p>8888073108</p>
                         </div>
                         <div className="icon-box">
                           <h6 className="title">
@@ -202,47 +202,6 @@ class ContactUs extends Component {
             </div>
           </section>
 
-          <section className="section-area section-sp1">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-4 col-md-6 mb-30">
-                  <div className="feature-container feature-bx4 feature4">
-                    <div className="icon-md feature-icon">
-                      <img src={icon1} alt="" />
-                    </div>
-                    <div className="icon-content">
-                      <h5 className="ttr-title">Contact Number</h5>
-                      <p>+001 123 456 790</p>
-                      <p>+002 3424 44 00</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 mb-30">
-                  <div className="feature-container feature-bx4 feature3">
-                    <div className="icon-md feature-icon">
-                      <img src={icon3} alt="" />
-                    </div>
-                    <div className="icon-content">
-                      <h5 className="ttr-title">Email Address</h5>
-                      <p>info@yourdomain.com</p>
-                      <p>example@support.com</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 mb-30">
-                  <div className="feature-container feature-bx4 feature2">
-                    <div className="icon-md feature-icon">
-                      <img src={icon2} alt="" />
-                    </div>
-                    <div className="icon-content">
-                      <h5 className="ttr-title">Address</h5>
-                      <p>2005 Stokes Isle Apt. 896, Venaville 10010, USA</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
 
         <Footer />
